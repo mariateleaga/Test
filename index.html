@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz 5 Categorie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ==================== NAVBAR ==================== -->
+<nav id="navbar">
+  <div id="logo-container">
+    <img id="logo" src="logo.png" alt="Logo Azienda">
+  </div>
+</nav>
+
+  <div id="logo-container">
+  <img src="logo.png" alt="Logo Azienda" id="logo">
+</div>
+
+<!-- ====================== SCREEN 1 ====================== -->
+<div id="screen1" class="screen">
+  <h1>Scopri di quale casata fai parte</h1>
+  <button id="startBtn">Inizia</button>
+</div>
+
+<!-- ====================== SCREEN 2 (QUIZ) ====================== -->
+<div id="screen2" class="screen hidden">
+  <h1>Quiz</h1>
+
+<form id="quizForm">
+
+  <!-- DOMANDA 1 -->
+  <div class="question">
+    <h3>1. Ti affidano un progetto all’ultimo minuto. La tua reaction?</h3>
+    <input type="radio" name="q1" value="A" id="q1a" required>
+    <label for="q1a">A. Apro 27 schede, 3 moodboard e un panico creativo “produttivo”.</label>
+    <input type="radio" name="q1" value="B" id="q1b">
+    <label for="q1b">B. Apro Excel senza sentire l’odore della sconfitta.</label>
+    <input type="radio" name="q1" value="C" id="q1c">
+    <label for="q1c">C. Mando una valanga di vocali per capire chi è vivo e chi può aiutare.</label>
+    <input type="radio" name="q1" value="D" id="q1d">
+    <label for="q1d">D. Riapro uno scatolone dimenticato “che non si sa mai”.</label>
+    <input type="radio" name="q1" value="E" id="q1e">
+    <label for="q1e">E. Googlo “come farcela in 10 minuti” e finisco su GitHub.</label>
+  </div>
+
+  <!-- DOMANDA 2 -->
+  <div class="question">
+    <h3>2. Devi spiegare un’idea al team. Come lo fai?</h3>
+    <input type="radio" name="q2" value="A" id="q2a" required>
+    <label for="q2a">A. Presentazione con meme, gif e schizzi geniali ma incomprensibili.</label>
+    <input type="radio" name="q2" value="B" id="q2b">
+    <label for="q2b">B. Pitch da workshop McKinsey anche se hai 18 anni.</label>
+    <input type="radio" name="q2" value="C" id="q2c">
+    <label for="q2c">C. Conversazione motivazionale stile Tedx del quartiere.</label>
+    <input type="radio" name="q2" value="D" id="q2d">
+    <label for="q2d">D. Prototipo fatto con scotch, cartone e determinazione.</label>
+    <input type="radio" name="q2" value="E" id="q2e">
+    <label for="q2e">E. Mini-demo a metà tra un tutorial e un hack.</label>
+  </div>
+
+  <!-- DOMANDA 3 -->
+  <div class="question">
+    <h3>3. Ti dicono: “Serve coinvolgere più persone”. Cosa fai?</h3>
+    <input type="radio" name="q3" value="A" id="q3a" required>
+    <label for="q3a">A. Curo l’estetica: se è bello, arrivano.</label>
+    <input type="radio" name="q3" value="B" id="q3b">
+    <label for="q3b">B. Apro un foglio con il funnel dei contatti come se fossi Meta Ads.</label>
+    <input type="radio" name="q3" value="C" id="q3c">
+    <label for="q3c">C. Entro in modalità PR da discoteca con Excel in mano.</label>
+    <input type="radio" name="q3" value="D" id="q3d">
+    <label for="q3d">D. Organizzo qualcosa di fisico perché la gente si muove solo per cose tangibili.</label>
+    <input type="radio" name="q3" value="E" id="q3e">
+    <label for="q3e">E. Sviluppo un tool che automatizzi la raccolta dei dati perché no sbatti.</label>
+  </div>
+
+  <!-- DOMANDA 4 -->
+  <div class="question">
+    <h3>4. Quando hai un blocco mentale, cosa ti sblocca?</h3>
+    <input type="radio" name="q4" value="A" id="q4a" required>
+    <label for="q4a">A. Un reel che non c’entra niente ma ti plasma il cervello.</label>
+    <input type="radio" name="q4" value="B" id="q4b">
+    <label for="q4b">B. Fare ordine in un file che nessuno toccherà mai.</label>
+    <input type="radio" name="q4" value="C" id="q4c">
+    <label for="q4c">C. Messaggiare con qualcuno che ti dà l’ansia giusta per muoverti.</label>
+    <input type="radio" name="q4" value="D" id="q4d">
+    <label for="q4d">D. Smontare qualcosa anche se non andava smontato.</label>
+    <input type="radio" name="q4" value="E" id="q4e">
+    <label for="q4e">E. Cambiare font a un codice che solo tu capisci.</label>
+  </div>
+
+  <!-- DOMANDA 5 -->
+  <div class="question">
+    <h3>5. Il tuo modo di gestire un imprevisto tecnico?</h3>
+    <input type="radio" name="q5" value="A" id="q5a" required>
+    <label for="q5a">A. Documentare il disastro per farci contenuto.</label>
+    <input type="radio" name="q5" value="B" id="q5b">
+    <label for="q5b">B. Trovare una procedura per evitare il disastro per i prossimi 7 anni.</label>
+    <input type="radio" name="q5" value="C" id="q5c">
+    <label for="q5c">C. Tenere la folla calma anche mentendo spudoratamente.</label>
+    <input type="radio" name="q5" value="D" id="q5d">
+    <label for="q5d">D. Ricablare cavi random sotto un tavolo.</label>
+    <input type="radio" name="q5" value="E" id="q5e">
+    <label for="q5e">E. Fare debug come se la tua vita dipendesse da quel JSON.</label>
+  </div>
+
+  <!-- DOMANDA 6 -->
+  <div class="question">
+    <h3>6. Ti svegli motivato: da cosa inizi?</h3>
+    <input type="radio" name="q6" value="A" id="q6a" required>
+    <label for="q6a">A. Playlist estetica, foto al caffè e idea random.</label>
+    <input type="radio" name="q6" value="B" id="q6b">
+    <label for="q6b">B. Agenda, priorità, micro-task, macro-task, task del task.</label>
+    <input type="radio" name="q6" value="C" id="q6c">
+    <label for="q6c">C. Far partire tre conversazioni contemporaneamente.</label>
+    <input type="radio" name="q6" value="D" id="q6d">
+    <label for="q6d">D. Controllare se un cavo che non usi da mesi funziona ancora.</label>
+    <input type="radio" name="q6" value="E" id="q6e">
+    <label for="q6e">E. Provare un nuovo tool “solo per vedere com’è”.</label>
+  </div>
+
+  <!-- DOMANDA 7 -->
+  <div class="question">
+    <h3>7. Ti propongono un progetto strapagato ma complicatissimo.</h3>
+    <input type="radio" name="q7" value="A" id="q7a" required>
+    <label for="q7a">A. “Se posso farlo sembrare figo, ci sto.”</label>
+    <input type="radio" name="q7" value="B" id="q7b">
+    <label for="q7b">B. “Ok, fammi solo capire timeline e responsabilità.”</label>
+    <input type="radio" name="q7" value="C" id="q7c">
+    <label for="q7c">C. “Se coinvolgo la gente giusta può funzionare.”</label>
+    <input type="radio" name="q7" value="D" id="q7d">
+    <label for="q7d">D. “Ci sarà da spostare cose? Dimmi di più.”</label>
+    <input type="radio" name="q7" value="E" id="q7e">
+    <label for="q7e">E. “Se posso automatizzarne metà, accetto.”</label>
+  </div>
+
+  <!-- DOMANDA 8 -->
+  <div class="question">
+    <h3>8. Devi scegliere un compito in un gruppo. Cosa prendi?</h3>
+    <input type="radio" name="q8" value="A" id="q8a" required>
+    <label for="q8a">A. Quello che richiede gusto estetico o narrativa.</label>
+    <input type="radio" name="q8" value="B" id="q8b">
+    <label for="q8b">B. Quello che nessuno vuole ma che salva la baracca.</label>
+    <input type="radio" name="q8" value="C" id="q8c">
+    <label for="q8c">C. Quello che permette di parlare con più persone.</label>
+    <input type="radio" name="q8" value="D" id="q8d">
+    <label for="q8d">D. Quello che richiede mani sporche.</label>
+    <input type="radio" name="q8" value="E" id="q8e">
+    <label for="q8e">E. Quello che richiede cervello più che socialità.</label>
+  </div>
+
+  <!-- DOMANDA 9 -->
+<div class="question">
+  <h3>9. Quale frase ti rappresenta meglio?</h3>
+  <input type="radio" name="q9" value="A" id="q9a" required>
+  <label for="q9a">A. “Se non è bello, mi annoia.”</label>
+  <input type="radio" name="q9" value="B" id="q9b">
+  <label for="q9b">B. “Se non è organizzato, mi irrita.”</label>
+  <input type="radio" name="q9" value="C" id="q9c">
+  <label for="q9c">C. “Se non coinvolge, è morto.”</label>
+  <input type="radio" name="q9" value="D" id="q9d">
+  <label for="q9d">D. “Se non è solido, si rompe.”</label>
+  <input type="radio" name="q9" value="E" id="q9e">
+  <label for="q9e">E. “Se non funziona, che senso ha?”</label>
+</div>
+
+<!-- DOMANDA 10 -->
+<div class="question">
+  <h3>10. Ti regalano un budget da gestire liberamente.</h3>
+  <input type="radio" name="q10" value="A" id="q10a" required>
+  <label for="q10a">A. Qualcosa che “fa atmosfera”.</label>
+  <input type="radio" name="q10" value="B" id="q10b">
+  <label for="q10b">B. Apro un foglio Excel con 14 colonne.</label>
+  <input type="radio" name="q10" value="C" id="q10c">
+  <label for="q10c">C. Chiedo agli altri cosa desiderano davvero.</label>
+  <input type="radio" name="q10" value="D" id="q10d">
+  <label for="q10d">D. Cerco come costruire invece di comprare.</label>
+  <input type="radio" name="q10" value="E" id="q10e">
+  <label for="q10e">E. Spendo tutto in un software che ci fa risparmiare ore.</label>
+</div>
+
+<!-- DOMANDA 11 -->
+<div class="question">
+  <h3>11. Ricevi una critica: come rispondi?</h3>
+  <input type="radio" name="q11" value="A" id="q11a" required>
+  <label for="q11a">A. “Ok ma guarda come è venuto carino.”</label>
+  <input type="radio" name="q11" value="B" id="q11b">
+  <label for="q11b">B. “Hai ragione, creo un protocollo.”</label>
+  <input type="radio" name="q11" value="C" id="q11c">
+  <label for="q11c">C. “Capiamoci meglio: cosa intendevi davvero?”</label>
+  <input type="radio" name="q11" value="D" id="q11d">
+  <label for="q11d">D. “Dammi 10 minuti, lo sistemo.”</label>
+  <input type="radio" name="q11" value="E" id="q11e">
+  <label for="q11e">E. “Aspetta che verifico se è un bug.”</label>
+</div>
+
+<!-- DOMANDA 12 -->
+<div class="question">
+  <h3>12. Uno del team sparisce nel momento clou. Come reagisci?</h3>
+  <input type="radio" name="q12" value="A" id="q12a" required>
+  <label for="q12a">A. Lo metto in una storia taggandolo passivo-aggressivo.</label>
+  <input type="radio" name="q12" value="B" id="q12b">
+  <label for="q12b">B. Riassegno i suoi compiti in 60 secondi.</label>
+  <input type="radio" name="q12" value="C" id="q12c">
+  <label for="q12c">C. Avvio una caccia all’uomo nei gruppi.</label>
+  <input type="radio" name="q12" value="D" id="q12d">
+  <label for="q12d">D. Copro la sua mancanza facendo tre cose insieme.</label>
+  <input type="radio" name="q12" value="E" id="q12e">
+  <label for="q12e">E. Automatizzo la sua parte così non serve più nessuno.</label>
+</div>
+
+<!-- DOMANDA 13 -->
+<div class="question">
+  <h3>13. Ti senti più soddisfatto quando…</h3>
+  <input type="radio" name="q13" value="A" id="q13a" required>
+  <label for="q13a">A. Crei qualcosa che fa dire “wow”.</label>
+  <input type="radio" name="q13" value="B" id="q13b">
+  <label for="q13b">B. Tutto fila liscio da vero project manager.</label>
+  <input type="radio" name="q13" value="C" id="q13c">
+  <label for="q13c">C. Unisci persone che non si parlerebbero.</label>
+  <input type="radio" name="q13" value="D" id="q13d">
+  <label for="q13d">D. Monti qualcosa che funziona davvero.</label>
+  <input type="radio" name="q13" value="E" id="q13e">
+  <label for="q13e">E. Fai andare un sistema complesso senza crash.</label>
+</div>
+
+<!-- DOMANDA 14 -->
+<div class="question">
+  <h3>14. Scegli una skill che ti definisce meglio.</h3>
+  <input type="radio" name="q14" value="A" id="q14a" required>
+  <label for="q14a">A. Estetica e storytelling</label>
+  <input type="radio" name="q14" value="B" id="q14b">
+  <label for="q14b">B. Organizzazione chirurgica</label>
+  <input type="radio" name="q14" value="C" id="q14c">
+  <label for="q14c">C. Empatia e comunicazione</label>
+  <input type="radio" name="q14" value="D" id="q14d">
+  <label for="q14d">D. Tecnica manuale</label>
+  <input type="radio" name="q14" value="E" id="q14e">
+  <label for="q14e">E. Logica e informatica</label>
+</div>
+
+<!-- DOMANDA 15 -->
+<div class="question">
+  <h3>15. Se dovessi scegliere un superpotere?</h3>
+  <input type="radio" name="q15" value="A" id="q15a" required>
+  <label for="q15a">A. Trasformare tutto in un contenuto bello</label>
+  <input type="radio" name="q15" value="B" id="q15b">
+  <label for="q15b">B. Creare ordine dal caos</label>
+  <input type="radio" name="q15" value="C" id="q15c">
+  <label for="q15c">C. Far cooperare persone incompatibili</label>
+  <input type="radio" name="q15" value="D" id="q15d">
+  <label for="q15d">D. Far comparire attrezzi dal nulla</label>
+  <input type="radio" name="q15" value="E" id="q15e">
+  <label for="q15e">E. Parlare il linguaggio di ogni software</label>
+</div>
+
+
+    <button type="submit">Calcola il risultato</button>
+  </form>
+</div>
+
+
+<!-- ====================== SCREEN 3 (VIDEO) ====================== -->
+<div id="screen3" class="screen hidden">
+  <video id="resultVideo" class="fullscreen-video" autoplay playsinline muted>
+    <source id="videoSource" src="" type="video/mp4">
+    Il tuo browser non supporta il video.
+  </video>
+  <div id="tapToUnmute" class="hidden overlay">
+  Tocca per attivare l’audio
+</div>
+</div>
+
+
+
+<!-- ====================== SCREEN 4 (RISULTATI FINALI) ====================== -->
+<div id="screen4" class="screen hidden">
+  <h1>Risultati</h1>
+  <div id="results">
+    <!-- Le barre dei punteggi saranno generate qui tramite JS -->
+  </div>
+  <button id="restartBtn">Rifai il quiz</button>
+</div>
+
+<script src="score.js"></script>
+</body>
+</html>
